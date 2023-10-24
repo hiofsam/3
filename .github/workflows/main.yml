@@ -3,7 +3,7 @@ name: Oblig 3 - git og continuous integration
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
