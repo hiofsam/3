@@ -9,7 +9,7 @@ class isLeapYearTest {
     void testDivisibleByFourAndNotHundred() {
         isLeapYear tester = new isLeapYear();
 
-        assertTrue(tester.isLeapYear(2023));
+        assertTrue(tester.isLeapYear(2024));
     }
     @Test
 
