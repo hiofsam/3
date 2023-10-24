@@ -21,7 +21,4 @@ jobs:
 
     - name: Bygger maven
       run: mvn -B package --file pom.xml
-
-    - name: Bygger og kjører tester
-      run: mvn clean test
       
