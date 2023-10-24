@@ -1,0 +1,23 @@
+name: Oblig 3 - git og continuous integration
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Step 1 - Sjekker ut koden
+      uses: actions/checkout@v2
+
+    - name: Step 2 - Setter opp JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: 17
+
+    - name: Bygger maven
+      run: mvn -B package --file pom.xml
+
+      
